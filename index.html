@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+    <h1>2048</h1>
+    
+    <div class="box-score">
+        
+        <div class="affichage-score">
+            <p class="score">Score</p>
+            <p id="score-nb">0</p>
+        </div>
+        <p id="differenceScore" class="">+0</p>
+
+
+    </div>
+    
+
+
+    <div class="header">
+
+        <div class="div-gauche">
+
+            <div class="choix">
+                <p class="choix-mode-ttl">Choisissez un mode :</p>
+                
+
+                <div class="c3x3">
+               <!--     <p class="choix-taille-ttl"> 3x3 : </p>-->
+                    <button onclick="choixNiveau(3)" class="choix-taille-ttl" ">3x3</button>
+
+                </div>
+
+                <div class="c4x4">
+              <!--     <p class="choix-taille-ttl"> 4x4 :</p>--> 
+                    <button onclick="choixNiveau(4)" class="choix-taille-ttl">4x4</button>
+
+                </div>
+
+                <div class="c5x5">
+              <!--    <p class="choix-taille-ttl"> 5x5 :</p>-->  
+                    <button onclick="choixNiveau(5);" class="choix-taille-ttl">5x5</button>
+
+                </div>
+
+                <div class="c6x6">
+            <!--       <p class="choix-taille-ttl"> 6x6 :</p>--> 
+                    <button onclick="choixNiveau(6);" class="choix-taille-ttl">6x6</button>
+
+                </div>
+
+
+                <div class="rejouer-div">
+                    <button class="rejouer" onclick="regen();"><p>Rejouer</p></button>
+            
+                </div>
+
+            </div>
+
+        </div>
+    
+        <div class="div-centre">
+            <table id="tableau">
+                <!--
+                <tr>
+                    <td id="case0_0">
+    
+                    </td>
+                    <td id="case0_1">
+    
+                    </td>
+                    <td id="case0_2">
+    
+                    </td>
+                    <td id="case0_3">
+    
+                    </td>
+                    <td id="case0_4">
+                        
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td id="case1_0">
+    
+                    </td>
+                    <td id="case1_1">
+    
+                    </td>
+                    <td id="case1_2">
+    
+                    </td>
+                    <td id="case1_3">
+    
+                    </td>
+                    <td id="case1_4">
+                        
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td id="case2_0">
+    
+                    </td>
+                    <td id="case2_1">
+    
+                    </td>
+                    <td id="case2_2">
+    
+                    </td>
+                    <td id="case2_3">
+    
+                    </td>
+                    <td id="case2_4">
+                        
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td id="case3_0">
+    
+                    </td>
+                    <td id="case3_1">
+    
+                    </td>
+                    <td id="case3_2">
+    
+                    </td>
+                    <td id="case3_3">
+    
+                    </td>
+                    <td id="case3_4">
+                        
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td id="case4_0">
+    
+                    </td>
+                    <td id="case4_1">
+    
+                    </td>
+                    <td id="case4_2">
+    
+                    </td>
+                    <td id="case4_3">
+    
+                    </td>
+                    <td id="case4_4">
+                        
+                    </td>
+                </tr>-->
+            </table>
+
+            <p id="perdu"></p>
+        </div>
+
+    
+        <div class="div-droite">
+
+
+    
+        </div>
+        
+    </div>
+
+    
+
+    
+    
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
